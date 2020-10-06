@@ -2,7 +2,7 @@ var express = require('express')
 var mongoose = require('mongoose')
 var products = require('./models/product');
 let app = express();
-let port_number = 5000;
+let port_number = process.env.PORT || 5000;
 
 mongoose.connect('mongodb+srv://Niket:Niket99@cluster0.b2bda.mongodb.net/Pretva?retryWrites=true&w=majority', {useNewUrlParser: true, useUnifiedTopology: true});
 
